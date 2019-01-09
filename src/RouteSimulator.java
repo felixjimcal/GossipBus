@@ -1,7 +1,7 @@
 public class RouteSimulator {
 
-    BusDriver driverA = new BusDriver("A");
-    BusDriver driverB = new BusDriver("B");
+    BusDriver driverA = new BusDriver("A", 1,2,3);
+    BusDriver driverB = new BusDriver("B", 3,1,3);
 
     Route route_BCN = new Route();
 
