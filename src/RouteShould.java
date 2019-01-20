@@ -47,4 +47,14 @@ public class RouteShould {
         Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A','B'))));
     }
 
+    // Okay, right noew se uqnatas paradas, que paradas son y que gossips hay,
+    // Me gustaria saber si en algun momento estos conductores van a coinidir
+    // EX:
+    // A 1,2
+    // B 2,1
+    // C 3,3
+    // Tenemos un BusDriver que nunca coincide con ninguna parada de los demas
+    // conductores, ahí esstá el problema, como se yo que coinciden en alguna parada?
+
+
 }
