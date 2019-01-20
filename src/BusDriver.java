@@ -9,10 +9,6 @@ public class BusDriver {
 
     Set<Character> gossips = new HashSet<>();;
 
-    public List<Integer> getStops() {
-        return stops;
-    }
-
     List<Integer> stops = new ArrayList<>();
 
 

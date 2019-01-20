@@ -18,7 +18,7 @@ public class RouteShould {
     public void intitialize()
     {
         driverA = new BusDriver('A', 1, 2, 3);
-        driverB = new BusDriver('B', 3, 1, 3);
+        driverB = new BusDriver('A', 3, 1, 3);
 
         route_BCN = new Route(driverA, driverB);
     }
@@ -37,6 +37,14 @@ public class RouteShould {
         Set<Integer> stops_expected = route_BCN.GetStops();
 
         Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1,2,3))));
+    }
+
+    @Test
+    public void CheckGossips()
+    {
+        Set<Character> gossips_expected = route_BCN.GetGossips();
+
+        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A'))));
     }
 
 }

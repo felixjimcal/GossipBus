@@ -24,4 +24,14 @@ public class Route {
 
         return stops;
     }
+
+    public Set<Character> GetGossips() {
+
+        for(int i = 0; i < my_drivers.size(); i++)
+        {
+            gossips.addAll(my_drivers.get(i).gossips);
+        }
+
+        return gossips;
+    }
 }
