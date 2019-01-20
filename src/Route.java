@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -14,10 +13,15 @@ public class Route {
         this.my_drivers.addAll(Arrays.asList(drivers));
     }
 
-    // Divide and conquer
-    // If we collect all the stops we can know the total of these
-    // then we can separate the drivers that are in that same stop
-    public void CollectAllStops() {
-        total_stops = 3;
+
+
+    public int GetTotalStops() {
+
+        for(int i = 0; i < my_drivers.size(); i++)
+        {
+            total_stops += my_drivers.get(i).stops.size();
+        }
+
+        return total_stops;
     }
 }
