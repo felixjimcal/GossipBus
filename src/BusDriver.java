@@ -13,7 +13,7 @@ public class BusDriver {
         return stops;
     }
 
-    List<Integer> stops = new ArrayList<>();;
+    List<Integer> stops = new ArrayList<>();
 
 
 }

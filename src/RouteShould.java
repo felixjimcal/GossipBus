@@ -2,6 +2,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.hamcrest.CoreMatchers.is;
 
 
@@ -30,7 +34,9 @@ public class RouteShould {
     @Test
     public void CheckStops()
     {
+        Set<Integer> stops_expected = route_BCN.GetStops();
 
+        Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1,2,3))));
     }
 
 }
