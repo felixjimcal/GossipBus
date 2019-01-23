@@ -4,12 +4,12 @@ public class BusDriver {
 
     BusDriver(Character gossip, Integer ... stops){
         this.gossips.add(gossip);
-        this.stops.addAll(Arrays.asList(stops));
+        this.m_stops.addAll(Arrays.asList(stops));
     }
 
     Set<Character> gossips = new HashSet<>();;
 
-    List<Integer> stops = new ArrayList<>();
+    List<Integer> m_stops = new ArrayList<>();
 
 
 }
