@@ -9,50 +9,37 @@ public class Route {
 
     Set<BusDriver> drivers_on_the_same_stop = new HashSet<>();
 
-    Route(BusDriver... drivers)
-    {
+    Route(BusDriver... drivers) {
         this.my_drivers.addAll(Arrays.asList(drivers));
+
+        this.CollectStops();
+        this.CollectGossips();
+        this.CollectDriversOnTheSameStop();
     }
 
-    public int GetTotalStops() {
-        return stops.size();
-    }
-
-    public void CollectStops()
-    {
-        for(int i = 0; i < my_drivers.size(); i++)
-        {
+    public void CollectStops() {
+        for (int i = 0; i < my_drivers.size(); i++) {
             stops.addAll(my_drivers.get(i).m_stops);
         }
     }
 
     public void CollectGossips() {
 
-        for(int i = 0; i < my_drivers.size(); i++)
-        {
+        for (int i = 0; i < my_drivers.size(); i++) {
             gossips.addAll(my_drivers.get(i).gossips);
         }
     }
 
-    public void CollectDriversOnTheSameStop()
-    {
-        CollectStops();
-        CollectGossips();
+    public void CollectDriversOnTheSameStop() {
+        List<Integer> stups = new ArrayList<Integer>(stops);
 
-        do
-        {
-            for(int i = 0; i < eight_hours_minutes; i++)
-            {
-                for (BusDriver driver: my_drivers)
-                {
-                    if(stops.iterator().next() == driver.m_stops.get(i))
-                    {
-                        drivers_on_the_same_stop.add(driver);
-                    }
+        for (int i = 0; i < stops.size(); i++) {
+            for (BusDriver driver : my_drivers) {
+                if (driver.m_stops.contains(stups.get(i))) {
+                    drivers_on_the_same_stop.add(driver);
                 }
             }
         }
-        while(eight_hours_minutes != 0);
     }
 
 }

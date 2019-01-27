@@ -20,14 +20,11 @@ public class RouteShould {
         driverB = new BusDriver('B', 1, 3, 2);
 
         route_BCN = new Route(driverA, driverB);
-        route_BCN.CollectStops();
-        route_BCN.CollectGossips();
-      //  route_BCN.CollectDriversOnTheSameStop();
     }
 
     @Test
     public void GetTotalStops() {
-        int total_stops_need = route_BCN.GetTotalStops();
+        int total_stops_need = route_BCN.stops.size();
 
         Assert.assertThat(total_stops_need, is(3));
     }
@@ -48,8 +45,8 @@ public class RouteShould {
 
     @Test
     public void CheckDriversOnTheSameStop() {
-        Set<BusDriver> gossips_expected = route_BCN.drivers_on_the_same_stop;
+        int gossips_expected = route_BCN.drivers_on_the_same_stop.size();
 
-        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList(new BusDriver('A', 1), new BusDriver('B', 1)))));
+        Assert.assertThat(gossips_expected, is(2));
     }
 }
