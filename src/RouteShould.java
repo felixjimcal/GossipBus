@@ -22,7 +22,7 @@ public class RouteShould {
         route_BCN = new Route(driverA, driverB);
         route_BCN.CollectStops();
         route_BCN.CollectGossips();
-        route_BCN.CollectDriversOnTheSameStop();
+      //  route_BCN.CollectDriversOnTheSameStop();
     }
 
     @Test
@@ -33,7 +33,7 @@ public class RouteShould {
     }
 
     @Test
-    public void CheckStops() {
+    public void CheckStopsCollected() {
         Set<Integer> stops_expected = route_BCN.stops;
 
         Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1, 2, 3))));

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a40a96b-9eec-420d-be39-2e5f9b8241a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/BusDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/BusDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/Route.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/RouteShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/RouteShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RouteShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouteShould.java" afterDir="false" />
-    </list>
+    <list default="true" id="1a40a96b-9eec-420d-be39-2e5f9b8241a1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +40,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="357">
                   <caret line="24" selection-start-line="24" selection-end-line="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -64,7 +56,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Route.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="664">
+                <state relative-caret-position="358">
                   <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
                 </state>
               </provider>
@@ -118,7 +110,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548278771389" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548615446625" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
@@ -134,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RouteShould">
+  <component name="RunManager" selected="JUnit.RouteShould.CheckStops">
     <configuration name="RouteShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
@@ -186,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RouteShould.CheckStops" />
+        <item itemvalue="JUnit.RouteShould.CheckGossips" />
+        <item itemvalue="JUnit.RouteShould.GetTotalStops" />
         <item itemvalue="JUnit.RouteShould" />
         <item itemvalue="JUnit.RouteShould.CheckDriversOnTheSameStop" />
-        <item itemvalue="JUnit.RouteShould.CheckStops" />
-        <item itemvalue="JUnit.RouteShould.GetTotalStops" />
-        <item itemvalue="JUnit.RouteShould.CheckGossips" />
       </list>
     </recent_temporary>
   </component>
@@ -208,18 +200,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RouteShould - 2019.01.23 at 21h 57m 41s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.01.23 at 21h 58m 04s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckDriversOnTheSameStop - 2019.01.23 at 21h 59m 00s.xml">
-      <configuration name="RouteShould.CheckDriversOnTheSameStop" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.01.23 at 21h 59m 08s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RouteShould - 2019.01.23 at 21h 59m 36s.xml">
       <configuration name="RouteShould" configurationId="JUnit" />
     </history-entry>
@@ -236,6 +216,18 @@
       <configuration name="RouteShould" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RouteShould - 2019.01.23 at 22h 10m 28s.xml">
+      <configuration name="RouteShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould - 2019.01.23 at 22h 25m 46s.xml">
+      <configuration name="RouteShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould - 2019.01.23 at 22h 25m 57s.xml">
+      <configuration name="RouteShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould - 2019.01.23 at 22h 26m 05s.xml">
+      <configuration name="RouteShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould - 2019.01.23 at 22h 26m 12s.xml">
       <configuration name="RouteShould" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -256,7 +248,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3279743" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3279743" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3279743" />
@@ -280,16 +272,16 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RouteShould.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Route.java</url>
           <line>37</line>
           <properties />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RouteShould.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -322,13 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BusDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -348,14 +333,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
+        <state relative-caret-position="358">
           <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="53" column="173" selection-start-line="53" selection-start-column="173" selection-end-line="53" selection-end-column="173" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="357">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
