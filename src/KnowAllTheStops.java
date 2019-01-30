@@ -1,4 +1,7 @@
+import org.junit.Assert;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
 
 public class  KnowAllTheStops{
 
@@ -9,10 +12,8 @@ public class  KnowAllTheStops{
             BusDriver driverB = new BusDriver('B', 3,1,3);
 
             Route route_BCN = new Route(driverA, driverB);
+             int total_stops_need = route_BCN.total_stops;
 
-            // int total_stops_need = route_BCN.;
-
-            // Obtener SÓLO el total de paradas
-            // Assert.assertThat(total_stops_need, is(3));
+             Assert.assertThat(total_stops_need, is(3));
         }
 }

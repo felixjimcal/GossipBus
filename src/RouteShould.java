@@ -11,42 +11,43 @@ import static org.hamcrest.CoreMatchers.is;
 
 public class RouteShould {
 
-    BusDriver driverA, driverB;
+    BusDriver driverA, driverB, driverC;
     Route route_BCN;
 
     @Before
     public void intitialize() {
-        driverA = new BusDriver('A', 1, 2, 3);
+        driverA = new BusDriver('A', 1, 3, 1);
         driverB = new BusDriver('B', 1, 3, 2);
+        driverC = new BusDriver('C', 3, 2, 1);
 
-        route_BCN = new Route(driverA, driverB);
+        route_BCN = new Route(driverA, driverB, driverC);
     }
 
     @Test
     public void GetTotalStops() {
-        int total_stops_need = route_BCN.stops.size();
+        int total_stops_need = route_BCN.route_stops.size();
 
         Assert.assertThat(total_stops_need, is(3));
     }
 
     @Test
     public void CheckStopsCollected() {
-        Set<Integer> stops_expected = route_BCN.stops;
+        Set<Integer> stops_expected = route_BCN.route_stops;
 
         Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1, 2, 3))));
     }
 
     @Test
     public void CheckGossips() {
-        Set<Character> gossips_expected = route_BCN.gossips;
+        Set<Character> gossips_expected = route_BCN.drivers_gossips;
 
-        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A', 'B'))));
+        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A', 'B', 'C'))));
     }
 
     @Test
-    public void CheckDriversOnTheSameStop() {
-        int gossips_expected = route_BCN.drivers_on_the_same_stop.size();
-
-        Assert.assertThat(gossips_expected, is(2));
+    public void CheckGossipsFromCollectedBusDrivers()
+    {
+        Set<Character> gossips_expected = route_BCN.gossips_from_drivers_on_the_same_stop;
+        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A','B'))));
     }
 }

@@ -1,45 +1,65 @@
 import java.util.*;
 
-public class Route {
+class Route {
 
-    Set<Integer> stops = new HashSet<>();
-    Set<Character> gossips = new HashSet<>();
-    List<BusDriver> my_drivers = new ArrayList<>();
-    private int eight_hours_minutes = 480;
+    Set<Integer> route_stops = new HashSet<>();
+    Set<Character> drivers_gossips = new HashSet<>();
+    private List<BusDriver> drivers = new ArrayList<>();
+    private Set<BusDriver> drivers_on_the_same_stop = new HashSet<>();
+    Set<Character> gossips_from_drivers_on_the_same_stop = new HashSet<Character>();
 
-    Set<BusDriver> drivers_on_the_same_stop = new HashSet<>();
+    int total_stops = 0;
 
     Route(BusDriver... drivers) {
-        this.my_drivers.addAll(Arrays.asList(drivers));
+        this.drivers.addAll(Arrays.asList(drivers));
 
         this.CollectStops();
         this.CollectGossips();
         this.CollectDriversOnTheSameStop();
     }
 
-    public void CollectStops() {
-        for (int i = 0; i < my_drivers.size(); i++) {
-            stops.addAll(my_drivers.get(i).m_stops);
+    private void CollectStops() {
+        for (BusDriver my_driver : drivers) {
+            route_stops.addAll(my_driver.m_stops);
         }
     }
 
-    public void CollectGossips() {
-
-        for (int i = 0; i < my_drivers.size(); i++) {
-            gossips.addAll(my_drivers.get(i).gossips);
+    private void CollectGossips() {
+        for (BusDriver my_driver : drivers) {
+            drivers_gossips.addAll(my_driver.gossips);
         }
     }
 
-    public void CollectDriversOnTheSameStop() {
-        List<Integer> stups = new ArrayList<Integer>(stops);
+    private void CollectDriversOnTheSameStop() {
+        List<Integer> stops_list = new ArrayList<>(route_stops);
 
-        for (int i = 0; i < stops.size(); i++) {
-            for (BusDriver driver : my_drivers) {
-                if (driver.m_stops.contains(stups.get(i))) {
+        for (int i = 0; i < route_stops.size(); i++) {
+            for (BusDriver driver : drivers) {
+                if (driver.m_stops.get(i).equals(stops_list.get(i))) {
                     drivers_on_the_same_stop.add(driver);
                 }
             }
+            if (drivers_on_the_same_stop.size() > 1) {
+                CollectGossipsFromCollectedDrivers();
+            }
+            drivers_on_the_same_stop.clear();
+            total_stops++;
         }
     }
+
+    private void CollectGossipsFromCollectedDrivers() {
+        for (BusDriver driver : drivers_on_the_same_stop) {
+            gossips_from_drivers_on_the_same_stop.addAll(driver.gossips);
+        }
+
+        ExchangeGossips();
+    }
+
+    private void ExchangeGossips() {
+        for (BusDriver driver : drivers_on_the_same_stop) {
+            driver.gossips.addAll(gossips_from_drivers_on_the_same_stop);
+        }
+    }
+
 
 }
