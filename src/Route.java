@@ -2,6 +2,7 @@ import java.util.*;
 
 class Route {
 
+    private int work_minutes = 480;
     Set<Integer> route_stops = new HashSet<>();
     Set<Character> drivers_gossips = new HashSet<>();
     private List<BusDriver> drivers = new ArrayList<>();
@@ -33,18 +34,19 @@ class Route {
     private void CollectDriversOnTheSameStop() {
         List<Integer> stops_list = new ArrayList<>(route_stops);
 
-        for (int i = 0; i < route_stops.size(); i++) {
-            for (BusDriver driver : drivers) {
-                if (driver.m_stops.get(i).equals(stops_list.get(i))) {
-                    drivers_on_the_same_stop.add(driver);
+            for (int i = 0; i < route_stops.size(); i++) {
+                for (BusDriver driver : drivers) {
+                    if (driver.m_stops.get(i).equals(stops_list.get(i))) {
+                        drivers_on_the_same_stop.add(driver);
+                    }
                 }
+                if (drivers_on_the_same_stop.size() > 1) {
+                    CollectGossipsFromCollectedDrivers();
+                }
+                drivers_on_the_same_stop.clear();
+                total_stops++;
+                work_minutes--;
             }
-            if (drivers_on_the_same_stop.size() > 1) {
-                CollectGossipsFromCollectedDrivers();
-            }
-            drivers_on_the_same_stop.clear();
-            total_stops++;
-        }
     }
 
     private void CollectGossipsFromCollectedDrivers() {

@@ -21,6 +21,9 @@ public class RouteShould {
         driverC = new BusDriver('C', 3, 2, 1);
 
         route_BCN = new Route(driverA, driverB, driverC);
+
+        // TODO: Controlar que los drivers nunca se crucen, controlar el total de paradas necesarias
+        // porque probablemente es necesaria una vuelta más en la ruta de los conductores
     }
 
     @Test
