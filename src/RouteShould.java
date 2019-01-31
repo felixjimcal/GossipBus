@@ -18,12 +18,10 @@ public class RouteShould {
     public void intitialize() {
         driverA = new BusDriver('A', 1, 3, 1);
         driverB = new BusDriver('B', 1, 3, 2);
-        driverC = new BusDriver('C', 3, 2, 1);
+        driverC = new BusDriver('C', 3, 2);
 
         route_BCN = new Route(driverA, driverB, driverC);
 
-        // TODO: Controlar que los drivers nunca se crucen, controlar el total de paradas necesarias
-        // porque probablemente es necesaria una vuelta más en la ruta de los conductores
     }
 
     @Test
@@ -37,7 +35,7 @@ public class RouteShould {
     public void CheckStopsCollected() {
         Set<Integer> stops_expected = route_BCN.route_stops;
 
-        Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1, 2, 3))));
+        Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1, 3, 2))));
     }
 
     @Test
@@ -51,6 +49,6 @@ public class RouteShould {
     public void CheckGossipsFromCollectedBusDrivers()
     {
         Set<Character> gossips_expected = route_BCN.gossips_from_drivers_on_the_same_stop;
-        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A','B'))));
+        Assert.assertThat(gossips_expected, is(new HashSet<>(Arrays.asList('A','B', 'C'))));
     }
 }

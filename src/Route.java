@@ -34,6 +34,7 @@ class Route {
     private void CollectDriversOnTheSameStop() {
         List<Integer> stops_list = new ArrayList<>(route_stops);
 
+        for (int j = 0; j < work_minutes; j++) {
             for (int i = 0; i < route_stops.size(); i++) {
                 for (BusDriver driver : drivers) {
                     if (driver.m_stops.get(i).equals(stops_list.get(i))) {
@@ -45,8 +46,8 @@ class Route {
                 }
                 drivers_on_the_same_stop.clear();
                 total_stops++;
-                work_minutes--;
             }
+        }
     }
 
     private void CollectGossipsFromCollectedDrivers() {
@@ -55,6 +56,22 @@ class Route {
         }
 
         ExchangeGossips();
+
+        if (AllGossipsAreShared()) {
+            return;
+        }
+    }
+
+    private boolean AllGossipsAreShared() {
+        boolean result = false;
+
+        for (BusDriver driver : drivers) {
+            if (driver.gossips.size() == drivers_gossips.size()) {
+                result = true;
+            }
+        }
+
+        return result;
     }
 
     private void ExchangeGossips() {
