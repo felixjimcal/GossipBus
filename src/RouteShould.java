@@ -17,7 +17,7 @@ public class RouteShould {
     @Before
     public void intitialize() {
         driverA = new BusDriver('A', 1, 3, 1);
-        driverB = new BusDriver('B', 3, 2, 1);
+        driverB = new BusDriver('B', 3, 2, 2, 1);
        // driverC = new BusDriver('C', 3, 2);
 
         route_BCN = new Route(driverA, driverB);
@@ -25,14 +25,14 @@ public class RouteShould {
 
     @Test
     public void GetTotalStopsInTheRoute() {
-        int total_stops_need = route_BCN.route_stops.size();
+        int total_stops_need = route_BCN.route_stops;
 
-        Assert.assertThat(total_stops_need, is(3));
+        Assert.assertThat(total_stops_need, is(4));
     }
 
     @Test
-    public void CheckStopsCollected() {
-        Set<Integer> stops_expected = route_BCN.route_stops;
+    public void CheckStationsCollected() {
+        Set<Integer> stops_expected = route_BCN.route_stations;
 
         Assert.assertThat(stops_expected, is(new HashSet<>(Arrays.asList(1, 2, 3))));
     }
