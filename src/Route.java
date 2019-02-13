@@ -58,14 +58,6 @@ class Route {
             {
                 for (BusDriver driver : drivers_on_the_route)
                 {
-                    // PArece que ruta tambien es un colaborador inteligente
-                    // Debe devolver la proxima parada, ya que el indice se sale de margen
-                    // estamos reclamando la parada 4 y solo tenemos 3
-                    // Redefinir disenyo de la aplicacion
-                    // O controlar la situacion en medio del bucle, GUARRADA
-                    // O hacer de ruta un colaborador en condiciones, CURRAZO
-                    // Hay que establecer el "main" en otra parte
-                    // A darle
                     int stop = driver.NextStop();
                     int stap = stations_list.get(i);
                     System.out.println(stop);
