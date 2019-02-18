@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a40a96b-9eec-420d-be39-2e5f9b8241a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/pl_pragmatists_JUnitParams_1_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GossipBus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GossipBus.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BusDriverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusDriverShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,7 +18,7 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36780384">
+    <splitter split-orientation="horizontal" split-proportion="0.56017506">
       <split-first>
         <splitter split-orientation="vertical" split-proportion="0.3847803">
           <split-first>
@@ -25,8 +26,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/BusDriver.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="174">
-                      <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+                    <state relative-caret-position="55">
+                      <caret line="21" selection-start-line="21" selection-end-line="21" />
                     </state>
                   </provider>
                 </entry>
@@ -38,10 +39,12 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/BusDriverShould.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="153">
-                      <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+                    <state relative-caret-position="206">
+                      <caret line="19" selection-start-line="19" selection-end-line="19" />
                       <folding>
                         <element signature="imports" expanded="true" />
+                        <element signature="e#358#359#0" expanded="true" />
+                        <element signature="e#411#412#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -58,7 +61,7 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/Route.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="145">
+                    <state relative-caret-position="113">
                       <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
                       <folding>
                         <element signature="imports" expanded="true" />
@@ -76,7 +79,7 @@
                   <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="111">
+                        <state relative-caret-position="77">
                           <caret line="19" selection-start-line="19" selection-end-line="19" />
                         </state>
                       </provider>
@@ -150,6 +153,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,14 +165,17 @@
             <path>
               <item name="gossippbus" type="b2602c69:ProjectViewProjectNode" />
               <item name="gossippbus" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gossippbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gossippbus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,8 +183,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550520748180" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550522700102" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunDashboard">
@@ -192,6 +203,15 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant">
+    <configuration name="BusDriverShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GossipBus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BusDriverShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
@@ -208,16 +228,6 @@
       <option name="MAIN_CLASS_NAME" value="KnowAllTheStops" />
       <option name="METHOD_NAME" value="ThreeStopsToKnowAllTheGossips" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KnowAllTheStops.ThreeStopsToKnowAllTheGossips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GossipBus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KnowAllTheStops" />
-      <option name="METHOD_NAME" value="ThreeStopsToKnowAllTheGossips" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,10 +254,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" />
+        <item itemvalue="JUnit.BusDriverShould" />
         <item itemvalue="JUnit.RouteShould.CheckDriversInTheRoad" />
         <item itemvalue="JUnit.RouteShould" />
         <item itemvalue="JUnit.KnowAllTheStops" />
-        <item itemvalue="JUnit.KnowAllTheStops.ThreeStopsToKnowAllTheGossips" />
       </list>
     </recent_temporary>
   </component>
@@ -265,35 +275,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KnowAllTheStops_ThreeStopsToKnowAllTheGossips - 2019.02.11 at 21h 56m 49s.xml">
-      <configuration name="KnowAllTheStops.ThreeStopsToKnowAllTheGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_ThreeStopsToKnowAllTheGossips - 2019.02.11 at 21h 57m 59s.xml">
-      <configuration name="KnowAllTheStops.ThreeStopsToKnowAllTheGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_ThreeStopsToKnowAllTheGossips - 2019.02.11 at 22h 01m 59s.xml">
-      <configuration name="KnowAllTheStops.ThreeStopsToKnowAllTheGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops - 2019.02.11 at 22h 02m 36s.xml">
-      <configuration name="KnowAllTheStops" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.02.13 at 20h 56m 59s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.02.13 at 21h 20m 23s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.02.13 at 21h 23m 00s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.02.13 at 21h 24m 39s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckDriversInTheRoad - 2019.02.13 at 21h 51m 12s.xml">
-      <configuration name="RouteShould.CheckDriversInTheRoad" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.13 at 22h 04m 55s.xml">
       <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 10m 30s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 11m 33s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 12m 09s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 12m 30s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 35m 03s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 36m 32s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 38m 12s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.02.18 at 21h 39m 40s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould - 2019.02.18 at 21h 41m 16s.xml">
+      <configuration name="BusDriverShould" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -307,9 +317,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" weight="0.15138593" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" weight="0.27899343" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.15138593" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,8 +327,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3301179" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3301179" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
@@ -373,6 +382,12 @@
           <line>26</line>
           <properties />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BusDriver.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -435,21 +450,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GossipBus.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="113">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -459,15 +462,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="77">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BusDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -481,22 +477,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GossipBus.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8266" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="127" selection-start-line="13" selection-start-column="127" selection-end-line="13" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BusDriverShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="206">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BusDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>GossipBus</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
