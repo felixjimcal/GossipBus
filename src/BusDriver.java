@@ -26,6 +26,4 @@ public class BusDriver {
 
        return value;
    }
-
-
 }
