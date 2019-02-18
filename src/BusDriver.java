@@ -12,7 +12,7 @@ public class BusDriver {
         this.m_stations.addAll(Arrays.asList(stops));
     }
 
-   public Integer NextStop()
+   Integer NextStop()
    {
        Integer value = 0;
 
