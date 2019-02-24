@@ -12,18 +12,22 @@ public class BusDriver {
         this.m_stations.addAll(Arrays.asList(stops));
     }
 
-   Integer NextStop()
+   Integer ActualStop()
    {
        Integer value = 0;
 
        value = m_stations.get(actual_index);
+
+       return value;
+   }
+
+   void NextStop()
+   {
        actual_index++;
 
        if(actual_index == m_stations.size())
        {
            actual_index = 0;
        }
-
-       return value;
    }
 }

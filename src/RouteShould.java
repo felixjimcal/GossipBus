@@ -2,9 +2,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.hamcrest.core.Is.is;
 
@@ -26,11 +25,12 @@ public class RouteShould {
     }
 
     @Test
-    public void RouteHasAllTheDifferentStops()
+    public void CheckCollectedActualStops()
     {
-        Set<Integer> expected_stops = route_BCN.m_stops_in_the_route;
-        Assert.assertThat(expected_stops, is(new HashSet<>(Arrays.asList(1,3,2))));
+        List<Integer> expected_stops = route_BCN.m_actual_drivers_stop;
+        List<Integer> stops = new ArrayList<>();
+        stops.add(1);
+        stops.add(3);
+        Assert.assertThat(expected_stops, is(stops));
     }
-
-    // Next STOP
 }

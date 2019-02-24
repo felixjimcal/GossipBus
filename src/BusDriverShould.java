@@ -20,13 +20,13 @@ public class BusDriverShould {
 
     @Test
     @Parameters({
-            "5",
+            "5 , driver.ActualStop()",
             "1",
             "4",
             "3"})
     public void CheckIfNextStopIsWhatTheStopWeWant(int val)
     {
-        Integer expected_station = driver.NextStop();
+        Integer expected_station = driver.ActualStop();
         Assert.assertThat(expected_station, is(val));
     }
 }
