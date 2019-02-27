@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.core.Is.is;
@@ -25,12 +26,15 @@ public class RouteShould {
     }
 
     @Test
-    public void CheckCollectedActualStops()
+    public void CheckBuaDriversOrder()
     {
-        List<Integer> expected_stops = route_BCN.m_actual_drivers_stop;
-        List<Integer> stops = new ArrayList<>();
-        stops.add(1);
-        stops.add(3);
-        Assert.assertThat(expected_stops, is(stops));
+        List<Integer> expected_stops = new ArrayList<>();
+
+        for(BusDriver actualDriver : route_BCN.m_drivers_in_the_route)
+        {
+            expected_stops.add(actualDriver.ActualStop());
+        }
+
+        Assert.assertThat(expected_stops, is(new ArrayList(Arrays.asList(1,3))));
     }
 }
