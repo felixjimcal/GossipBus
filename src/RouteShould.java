@@ -19,14 +19,14 @@ public class RouteShould {
     public void Initialize()
     {
         driverA = new BusDriver('A', 1, 3, 1);
-        driverB = new BusDriver('B', 3, 2, 2, 1);
+        driverB = new BusDriver('B', 1, 2, 2, 1);
         // driverC = new BusDriver('C', 3, 2);
 
         route_BCN = new Route(driverA, driverB);
     }
 
     @Test
-    public void CheckBuaDriversOrder()
+    public void CheckBusDriversOrder()
     {
         List<Integer> expected_stops = new ArrayList<>();
 
@@ -37,4 +37,6 @@ public class RouteShould {
 
         Assert.assertThat(expected_stops, is(new ArrayList(Arrays.asList(1,3))));
     }
+
+
 }
