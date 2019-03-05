@@ -8,42 +8,58 @@ class Route {
 
     List<BusDriver> m_drivers_in_the_route = new ArrayList<>();
 
-    Set<Character> gossips = new HashSet<>();
+    Set<Character> all_possible_gossips = new HashSet<>();
 
-    Route(BusDriver... drivers) {
+    List<BusDriver> actual_drivers = new ArrayList<>();
 
+    Route(BusDriver... drivers)
+    {
         m_drivers_in_the_route.addAll(Arrays.asList(drivers));
 
-        Collections.sort(m_drivers_in_the_route, BusDriver.ComparatorActualStop);
+        SortDriversInRoute();
 
         CollectAllTheGossips();
 
         for(int stops = 0; stops < m_drivers_in_the_route.size(); stops++)
-         {
-            int actual_stop = 0, last_stop = 0;
-
+        {
             for(BusDriver driver : m_drivers_in_the_route)
             {
-                actual_stop = driver.ActualStop();
+               actual_drivers.add(driver);
 
-                if(actual_stop == last_stop)
-                {
-                    m_drivers_on_the_same_stop.add(driver);
-                }
-                else
-                {
-                    ExchangeGossips();
-                }
+               CheckDriversStops();
 
-                last_stop = actual_stop;
+               driver.NextStop();
             }
         }
     }
 
-    private void CollectAllTheGossips() {
+    private void SortDriversInRoute() {
+        actual_drivers.sort(Comparator.comparing(BusDriver::ActualStop));
+    }
+
+    private void CheckDriversStops() {
+        Set<Integer> stops = new HashSet<>();
+
+        for(BusDriver driver : actual_drivers)
+        {
+            stops.add(driver.ActualStop());
+        }
+
+        if(stops.size() == 1)
+        {
+            ExchangeGossips();
+        }
+        else
+        {
+            actual_drivers.clear();
+        }
+    }
+
+    private void CollectAllTheGossips()
+    {
         for(BusDriver driver: m_drivers_in_the_route)
         {
-            gossips.addAll(driver.m_gossips);
+            all_possible_gossips.addAll(driver.m_gossips);
         }
     }
 
@@ -51,12 +67,12 @@ class Route {
     {
         Set<Character> gossips = new HashSet<>();
 
-        for(BusDriver driver : m_drivers_on_the_same_stop)
+        for(BusDriver driver : actual_drivers)
         {
             gossips.addAll(driver.m_gossips);
         }
 
-        for(BusDriver driver : m_drivers_on_the_same_stop)
+        for(BusDriver driver : actual_drivers)
         {
             driver.m_gossips.addAll(gossips);
         }
