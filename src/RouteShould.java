@@ -2,7 +2,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.hamcrest.core.Is.is;
 
@@ -25,6 +27,14 @@ public class RouteShould {
     }
 
     @Test
+    public void CheckActualStopsFromDrivers()
+    {
+        List<Integer> expected_stops =route_BCN.drivers_actual_stop;
+        Assert.assertThat(expected_stops, is(new ArrayList(Arrays.asList(3,3,4))));
+    }
+
+    /*
+    @Test
     public void CheckBusDriversOrder()
     {
         List<Integer> expected_stops = new ArrayList<>();
@@ -36,18 +46,14 @@ public class RouteShould {
 
         Assert.assertThat(expected_stops, is(new ArrayList(Arrays.asList(1,3,4))));
     }
+    */
 
-    @Test
-    public void CheckAllGossips()
-    {
-        Set<Character> expected_gossips = route_BCN.all_possible_gossips;
-        Assert.assertThat(expected_gossips, is(new HashSet(Arrays.asList('A','B','C'))));
-    }
-
+    /*
     @Test
     public void CheckGossipExchanged()
     {
         Set<Character> expected_exchanged = new HashSet<>(Arrays.asList('A','B', 'C'));
         Assert.assertThat(driverA.m_gossips, is(expected_exchanged));
     }
+    */
 }
