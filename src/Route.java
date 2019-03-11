@@ -6,28 +6,44 @@ class Route {
 
     List<BusDriver> m_drivers_in_the_route = new ArrayList<>();
 
-    List<Integer> drivers_actual_stop = new ArrayList<>();
+    Set<Integer> m_drivers_actual_stop = new HashSet<>();
+    Set<BusDriver> m_drivers_on_same_stop = new HashSet<>();
+
+    Set<BusDriver> m_drivers_to_share_gossips = new HashSet<>();
 
     Route(BusDriver... drivers)
     {
         m_drivers_in_the_route.addAll(Arrays.asList(drivers));
 
-        GetActualStopFromDrivers();
-
         FindDuplicates();
+
+        FindDriversWithSameStop();
     }
 
-    private void FindDuplicates() {
-        // Encuentra los duplicados
-        // Entonces busca que conducctores estan en una de las paradas duplicadas
-        // Entonces guarda esos codnuctores en otra lista y luegos haces el intercambio
-        // Sure?
-    }
+    private void FindDriversWithSameStop()
+    {
+        Iterator<BusDriver> iterator = m_drivers_on_same_stop.iterator();
 
-    private void GetActualStopFromDrivers() {
-        for(BusDriver driver: m_drivers_in_the_route)
+        while(iterator.hasNext())
         {
-            drivers_actual_stop.add(driver.ActualStop());
+            BusDriver nextDriver = iterator.next();
+
+            if(nextDriver.ActualStop().equals(iterator.next().ActualStop()))
+            {
+
+            }
+            else
+        }
+    }
+
+    private void FindDuplicates()
+    {
+        for(BusDriver driver : m_drivers_in_the_route)
+        {
+            if(!m_drivers_actual_stop.add(driver.ActualStop()))
+            {
+                m_drivers_on_same_stop.add(driver);
+            }
         }
     }
 }

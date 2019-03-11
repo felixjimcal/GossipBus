@@ -2,9 +2,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 import static org.hamcrest.core.Is.is;
 
@@ -27,10 +25,10 @@ public class RouteShould {
     }
 
     @Test
-    public void CheckActualStopsFromDrivers()
+    public void CheckDuplicatedStops()
     {
-        List<Integer> expected_stops =route_BCN.drivers_actual_stop;
-        Assert.assertThat(expected_stops, is(new ArrayList(Arrays.asList(3,3,4))));
+        Set<Integer> expected_drivers = route_BCN.m_drivers_actual_stop;
+        Assert.assertThat(expected_drivers, is(new HashSet(Arrays.asList(3,4))));
     }
 
     /*
