@@ -25,10 +25,17 @@ public class RouteShould {
     }
 
     @Test
-    public void CheckDuplicatedStops()
+    public void CheckActualStopsList()
     {
-        Set<Integer> expected_drivers = route_BCN.m_drivers_actual_stop;
-        Assert.assertThat(expected_drivers, is(new HashSet(Arrays.asList(3,4))));
+        Set<Integer> expected_stops = route_BCN.m_drivers_actual_stop;
+        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(3,4))));
+    }
+
+    @Test
+    public void CheckDriversOnTheStop3()
+    {
+        List<BusDriver> expected_drivers = route_BCN.m_drivers_on_the_same_stop;
+        Assert.assertThat(expected_drivers, is(new ArrayList(Arrays.asList(driverA, driverB))));
     }
 
     /*

@@ -4,46 +4,45 @@ class Route {
 
     int total_stops_to_share_all_the_gossips = 0, minutes = 480;
 
-    List<BusDriver> m_drivers_in_the_route = new ArrayList<>();
-
-    Set<Integer> m_drivers_actual_stop = new HashSet<>();
-    Set<BusDriver> m_drivers_on_same_stop = new HashSet<>();
-
-    Set<BusDriver> m_drivers_to_share_gossips = new HashSet<>();
+    private List<BusDriver> m_drivers_in_the_route = new ArrayList<>();
+    public Set<Integer> m_drivers_actual_stop = new HashSet<>();
+    public List<BusDriver> m_drivers_on_the_same_stop = new ArrayList<>();
 
     Route(BusDriver... drivers)
     {
         m_drivers_in_the_route.addAll(Arrays.asList(drivers));
 
-        FindDuplicates();
+        GetActualStops();
 
-        FindDriversWithSameStop();
+        GetDriversOnTheSameActualStop();
     }
 
-    private void FindDriversWithSameStop()
-    {
-        Iterator<BusDriver> iterator = m_drivers_on_same_stop.iterator();
-
-        while(iterator.hasNext())
+    private void GetDriversOnTheSameActualStop() {
+        for (Integer stop : m_drivers_actual_stop )
         {
-            BusDriver nextDriver = iterator.next();
-
-            if(nextDriver.ActualStop().equals(iterator.next().ActualStop()))
+            for(BusDriver driver : m_drivers_in_the_route)
             {
-
+                if(driver.ActualStop().equals(stop))
+                {
+                    m_drivers_on_the_same_stop.add(driver);
+                }
             }
-            else
+
+            ExchangeGossips();
         }
     }
 
-    private void FindDuplicates()
+    private void ExchangeGossips() {
+        // Coleccionza los gossips, nuevo metodo
+
+        // Intercambia los cotilleos en un nuevo metodo
+    }
+
+    private void GetActualStops()
     {
         for(BusDriver driver : m_drivers_in_the_route)
         {
-            if(!m_drivers_actual_stop.add(driver.ActualStop()))
-            {
-                m_drivers_on_same_stop.add(driver);
-            }
+            m_drivers_actual_stop.add(driver.ActualStop());
         }
     }
 }

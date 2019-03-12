@@ -20,14 +20,14 @@
     <SUITE FILE_PATH="coverage/gossippbus$RouteShould_CheckGossipExchanged.ic" NAME="RouteShould.CheckGossipExchanged Coverage Results" MODIFIED="1551812425772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.45021644">
+    <splitter split-orientation="vertical" split-proportion="0.44480172">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Route.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+                <state relative-caret-position="77">
+                  <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
                 </state>
               </provider>
             </entry>
@@ -58,14 +58,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.71115977">
+        <splitter split-orientation="horizontal" split-proportion="0.5735608">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="186">
-                      <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+                    <state relative-caret-position="100">
+                      <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -133,7 +133,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -152,7 +152,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552342514645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552425828923" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -171,12 +171,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RouteShould.CheckDuplicatedStops">
+  <component name="RunManager" selected="JUnit.RouteShould.CheckDriversOnTheStop3">
     <configuration name="RouteShould.CheckActualStopsFromDrivers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RouteShould" />
       <option name="METHOD_NAME" value="CheckActualStopsFromDrivers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouteShould.CheckActualStopsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GossipBus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RouteShould" />
+      <option name="METHOD_NAME" value="CheckActualStopsList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +202,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RouteShould.CheckBusDriversOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RouteShould.CheckDriversOnTheStop3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RouteShould" />
-      <option name="METHOD_NAME" value="CheckBusDriversOrder" />
+      <option name="METHOD_NAME" value="CheckDriversOnTheStop3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,23 +222,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RouteShould.CheckGossipExchanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GossipBus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RouteShould" />
-      <option name="METHOD_NAME" value="CheckGossipExchanged" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RouteShould.CheckDriversOnTheStop3" />
+        <item itemvalue="JUnit.RouteShould.CheckActualStopsList" />
         <item itemvalue="JUnit.RouteShould.CheckDuplicatedStops" />
         <item itemvalue="JUnit.RouteShould.CheckActualStopsFromDrivers" />
         <item itemvalue="JUnit.RouteShould.CheckAllGossips" />
-        <item itemvalue="JUnit.RouteShould.CheckBusDriversOrder" />
-        <item itemvalue="JUnit.RouteShould.CheckGossipExchanged" />
       </list>
     </recent_temporary>
   </component>
@@ -246,24 +246,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RouteShould_CheckBusDriversOrder - 2019.03.05 at 22h 07m 03s.xml">
-      <configuration name="RouteShould.CheckBusDriversOrder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckBusDriversOrder - 2019.03.06 at 20h 54m 47s.xml">
-      <configuration name="RouteShould.CheckBusDriversOrder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckAllGossips - 2019.03.06 at 20h 55m 04s.xml">
-      <configuration name="RouteShould.CheckAllGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckActualStopsFromDrivers - 2019.03.06 at 21h 21m 10s.xml">
-      <configuration name="RouteShould.CheckActualStopsFromDrivers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckActualStopsFromDrivers - 2019.03.06 at 21h 22m 26s.xml">
-      <configuration name="RouteShould.CheckActualStopsFromDrivers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckActualStopsFromDrivers - 2019.03.06 at 21h 22m 48s.xml">
-      <configuration name="RouteShould.CheckActualStopsFromDrivers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RouteShould_CheckActualStopsFromDrivers - 2019.03.06 at 21h 23m 08s.xml">
       <configuration name="RouteShould.CheckActualStopsFromDrivers" configurationId="JUnit" />
     </history-entry>
@@ -276,6 +258,24 @@
     <history-entry file="RouteShould_CheckDuplicatedStops - 2019.03.11 at 22h 57m 38s.xml">
       <configuration name="RouteShould.CheckDuplicatedStops" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RouteShould_CheckDuplicatedStops - 2019.03.12 at 21h 53m 33s.xml">
+      <configuration name="RouteShould.CheckDuplicatedStops" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould_CheckActualStopsList - 2019.03.12 at 22h 01m 43s.xml">
+      <configuration name="RouteShould.CheckActualStopsList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould_CheckDriversOnTheStop3 - 2019.03.12 at 22h 17m 56s.xml">
+      <configuration name="RouteShould.CheckDriversOnTheStop3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould_CheckDriversOnTheStop3 - 2019.03.12 at 22h 18m 51s.xml">
+      <configuration name="RouteShould.CheckDriversOnTheStop3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould_CheckDriversOnTheStop3 - 2019.03.12 at 22h 19m 36s.xml">
+      <configuration name="RouteShould.CheckDriversOnTheStop3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould_CheckDriversOnTheStop3 - 2019.03.12 at 22h 19m 53s.xml">
+      <configuration name="RouteShould.CheckDriversOnTheStop3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,7 +287,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" weight="0.27899343" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.15138593" />
@@ -298,12 +298,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3982684" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3279743" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39764202" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32467532" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3215434" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32792208" />
@@ -347,6 +347,16 @@
     </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Route.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="driver.gossips.size()" language="JAVA" />
@@ -430,13 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BusDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -466,10 +469,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="100">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -478,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="77">
+          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
         </state>
       </provider>
     </entry>
