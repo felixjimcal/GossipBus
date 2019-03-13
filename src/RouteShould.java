@@ -27,7 +27,7 @@ public class RouteShould {
     @Test
     public void CheckActualStopsList()
     {
-        Set<Integer> expected_stops = route_BCN.m_drivers_actual_stop;
+        Set<Integer> expected_stops = route_BCN.m_actual_stops;
         Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(3,4))));
     }
 
@@ -36,6 +36,19 @@ public class RouteShould {
     {
         List<BusDriver> expected_drivers = route_BCN.m_drivers_on_the_same_stop;
         Assert.assertThat(expected_drivers, is(new ArrayList(Arrays.asList(driverA, driverB))));
+    }
+
+    @Test
+    public void CheckCollectedGossips()
+    {
+        Set<Character> expected_drivers = route_BCN.m_gossips_collected;
+        Assert.assertThat(expected_drivers, is(new HashSet(Arrays.asList('A','B'))));
+    }
+
+    @Test
+    public void CheckDriversNextStop()
+    {
+        throw new RuntimeException();
     }
 
     /*
