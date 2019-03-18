@@ -13,11 +13,17 @@ class Route {
     {
         m_drivers_in_the_route.addAll(Arrays.asList(drivers));
 
-        for(int i = 0; i < minutes; i++)
-        {
-            GetActualStops();
+        // for(int i = 0; i < minutes; i++)
+        // {
+            GetActualRepeatedStops();
 
             GetDriversOnTheSameActualStop();
+
+            CollectGossips();
+
+            ExchangeGossips();
+
+
 
             /*
             if(AreAllTheGossipsShared())
@@ -35,7 +41,7 @@ class Route {
             }
 
             AllDriversGoToTheNextStop();
-        }
+       // }
     }
 
     private void AllDriversGoToTheNextStop()
@@ -56,24 +62,7 @@ class Route {
                     m_drivers_on_the_same_stop.add(driver);
                 }
             }
-
-            if(m_drivers_on_the_same_stop.size() > 1)
-            {
-                PrepareExchange();
-
-                m_gossips_collected.clear();
-                m_actual_stops.clear();
-            }
-
-            m_drivers_on_the_same_stop.clear();
         }
-    }
-
-    private void PrepareExchange()
-    {
-        CollectGossips();
-
-        ExchangeGossips();
     }
 
     private void ExchangeGossips() {
@@ -85,17 +74,27 @@ class Route {
 
     private void CollectGossips()
     {
+        if(m_drivers_on_the_same_stop.size() < 2)
+        {
+            return;
+        }
+
         for(BusDriver driver : m_drivers_on_the_same_stop)
         {
             m_gossips_collected.addAll(driver.m_gossips);
         }
     }
 
-    private void GetActualStops()
+    private void GetActualRepeatedStops()
     {
+        Set<Integer> stops = new HashSet<>();
+
         for(BusDriver driver : m_drivers_in_the_route)
         {
-            m_actual_stops.add(driver.ActualStop());
+            if(!stops.add(driver.ActualStop()))
+            {
+                m_actual_stops.add(driver.ActualStop());
+            }
         }
     }
 }

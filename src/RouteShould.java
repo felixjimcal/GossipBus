@@ -25,10 +25,10 @@ public class RouteShould {
     }
 
     @Test
-    public void CheckActualStopsList()
+    public void CheckActualRepeatedStops()
     {
         Set<Integer> expected_stops = route_BCN.m_actual_stops;
-        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(3,4))));
+        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(3))));
     }
 
     @Test
