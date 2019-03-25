@@ -83,7 +83,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -121,7 +121,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553551281528" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553551492198" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -214,12 +214,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KnowAllTheStops_NeverEnd - 2019.03.25 at 22h 46m 27s.xml">
-      <configuration name="KnowAllTheStops.NeverEnd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_NeverEnd - 2019.03.25 at 22h 47m 08s.xml">
-      <configuration name="KnowAllTheStops.NeverEnd" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.03.25 at 22h 47m 19s.xml">
       <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
@@ -242,6 +236,12 @@
       <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 22h 55m 49s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 22h 59m 28s.xml">
+      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 23h 01m 51s.xml">
       <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
     </history-entry>
   </component>

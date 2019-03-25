@@ -15,15 +15,15 @@ public class BusDriverShould {
     @Before
     public void Initialize()
     {
-        driverA = new BusDriver('A', 3, 1, 2, 3);
+        driverA = new BusDriver('A', 3, 4, 99, 1);
     }
 
     @Test
     @Parameters({
-            "0,5",
-            "1,1",
-            "2,4",
-            "3,3"})
+            "0,3",
+            "1,4",
+            "2,99",
+            "3,1"})
     public void CheckIfNextStopIsWhatTheStopWeWant(int index, int val)
     {
         for(int i = 0; i < index; i++)
