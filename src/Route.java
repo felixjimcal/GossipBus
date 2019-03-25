@@ -5,16 +5,16 @@ class Route {
     int total_stops_to_share_all_the_gossips = 0, minutes = 480;
 
     private List<BusDriver> m_drivers_in_the_route = new ArrayList<>();
-    public Set<Integer> m_actual_stops = new HashSet<>();
-    public List<BusDriver> m_drivers_on_the_same_stop = new ArrayList<>();
-    public Set<Character> m_gossips_collected = new HashSet<>();
+    Set<Integer> m_actual_stops = new HashSet<>();
+    List<BusDriver> m_drivers_on_the_same_stop = new ArrayList<>();
+    Set<Character> m_gossips_collected = new HashSet<>();
 
     Route(BusDriver... drivers)
     {
         m_drivers_in_the_route.addAll(Arrays.asList(drivers));
 
-        // for(int i = 0; i < minutes; i++)
-        // {
+         for(int i = 0; i < minutes; i++)
+         {
             GetActualRepeatedStops();
 
             GetDriversOnTheSameActualStop();
@@ -23,25 +23,53 @@ class Route {
 
             ExchangeGossips();
 
+            total_stops_to_share_all_the_gossips++;
 
-
-            /*
             if(AreAllTheGossipsShared())
             {
+                ShowMessage(String.valueOf(total_stops_to_share_all_the_gossips));
                 break;
-                // End of the program
             }
-            */
-
-            total_stops_to_share_all_the_gossips++;
 
             if(total_stops_to_share_all_the_gossips == minutes)
             {
-                // end of the program
+                ShowMessage("Never");
             }
 
             AllDriversGoToTheNextStop();
-       // }
+            CleanLists();
+        }
+    }
+
+    private void CleanLists() {
+        m_actual_stops.clear();
+        m_drivers_on_the_same_stop.clear();
+        m_gossips_collected.clear();
+    }
+
+    private void ShowMessage(String message) {
+        System.out.println(message);
+    }
+
+    private boolean AreAllTheGossipsShared()
+    {
+        boolean result = false;
+        int drivers_with_all_the_gossips = 0;
+
+        for(BusDriver driver : m_drivers_in_the_route)
+        {
+            if(driver.m_gossips.size() == m_gossips_collected.size())
+            {
+                drivers_with_all_the_gossips++;
+            }
+        }
+
+        if(drivers_with_all_the_gossips == m_drivers_in_the_route.size())
+        {
+            result = true;
+        }
+
+        return result;
     }
 
     private void AllDriversGoToTheNextStop()

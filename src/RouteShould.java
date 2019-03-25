@@ -28,7 +28,7 @@ public class RouteShould {
     public void CheckActualRepeatedStops()
     {
         Set<Integer> expected_stops = route_BCN.m_actual_stops;
-        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(3))));
+        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(2, 3))));
     }
 
     @Test
@@ -48,30 +48,7 @@ public class RouteShould {
     @Test
     public void CheckDriversNextStop()
     {
-        throw new RuntimeException();
+        Integer expected_stop = driverA.ActualStop();
+        Assert.assertThat(expected_stop, is(1));
     }
-
-    /*
-    @Test
-    public void CheckBusDriversOrder()
-    {
-        List<Integer> expected_stops = new ArrayList<>();
-
-        for(BusDriver actualDriver : route_BCN.m_drivers_in_the_route)
-        {
-            expected_stops.add(actualDriver.ActualStop());
-        }
-
-        Assert.assertThat(expected_stops, is(new ArrayList(Arrays.asList(1,3,4))));
-    }
-    */
-
-    /*
-    @Test
-    public void CheckGossipExchanged()
-    {
-        Set<Character> expected_exchanged = new HashSet<>(Arrays.asList('A','B', 'C'));
-        Assert.assertThat(driverA.m_gossips, is(expected_exchanged));
-    }
-    */
 }

@@ -10,23 +10,28 @@ import static org.hamcrest.core.Is.is;
 @RunWith(JUnitParamsRunner.class)
 public class BusDriverShould {
 
-    private BusDriver driver;
+    BusDriver driverA;
 
     @Before
     public void Initialize()
     {
-         driver = new BusDriver('A', 5,1,4,3);
+        driverA = new BusDriver('A', 3, 1, 2, 3);
     }
 
     @Test
     @Parameters({
-            "5 , driver.ActualStop()",
-            "1",
-            "4",
-            "3"})
-    public void CheckIfNextStopIsWhatTheStopWeWant(int val)
+            "0,5",
+            "1,1",
+            "2,4",
+            "3,3"})
+    public void CheckIfNextStopIsWhatTheStopWeWant(int index, int val)
     {
-        Integer expected_station = driver.ActualStop();
-        Assert.assertThat(expected_station, is(val));
+        for(int i = 0; i < index; i++)
+        {
+            driverA.NextStop();
+        }
+
+        Integer expected_stop = driverA.ActualStop();
+        Assert.assertThat(expected_stop, is(val));
     }
 }
