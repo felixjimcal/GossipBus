@@ -29,6 +29,10 @@ The number of stops it takes to have all drivers on board with the latest gossip
 Example 1: 5
 
 Example 2: never
+
+### FYI
+I have made a Flowchart to understand how I have designed the solution
+
 ### Prerequisites
 
 You need an IDE to run the test in Java
