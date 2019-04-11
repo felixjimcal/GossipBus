@@ -5,23 +5,22 @@ class Route {
     int total_stops_to_share_all_the_gossips = 0, minutes = 480;
 
     private List<BusDriver> m_drivers_in_the_route = new ArrayList<>();
-    Set<Integer> m_actual_stops = new HashSet<>();
+    Set<Integer> m_actual_repeated_stops = new HashSet<>();
     List<BusDriver> m_drivers_on_the_same_stop = new ArrayList<>();
     Set<Character> m_gossips_collected = new HashSet<>();
+    Set<Character> m_all_the_gossips = new HashSet<>();
 
     Route(BusDriver... drivers)
     {
         m_drivers_in_the_route.addAll(Arrays.asList(drivers));
 
+        CollectAllGossips();
+
          for(int i = 0; i < minutes; i++)
          {
             GetActualRepeatedStops();
 
-            GetDriversOnTheSameActualStop();
-
-            CollectGossips();
-
-            ExchangeGossips();
+            GetDriversOnTheSameStationOnActualStop();
 
             total_stops_to_share_all_the_gossips++;
 
@@ -41,8 +40,15 @@ class Route {
         }
     }
 
+    private void CollectAllGossips() {
+        for(BusDriver driver : m_drivers_in_the_route)
+        {
+            m_all_the_gossips.addAll(driver.m_gossips);
+        }
+    }
+
     private void CleanLists() {
-        m_actual_stops.clear();
+        m_actual_repeated_stops.clear();
         m_drivers_on_the_same_stop.clear();
         m_gossips_collected.clear();
     }
@@ -58,7 +64,7 @@ class Route {
 
         for(BusDriver driver : m_drivers_in_the_route)
         {
-            if(driver.m_gossips.size() == m_gossips_collected.size())
+            if(driver.m_gossips.size() == m_all_the_gossips.size())
             {
                 drivers_with_all_the_gossips++;
             }
@@ -80,8 +86,8 @@ class Route {
         }
     }
 
-    private void GetDriversOnTheSameActualStop() {
-        for (Integer stop : m_actual_stops)
+    private void GetDriversOnTheSameStationOnActualStop() {
+        for (Integer stop : m_actual_repeated_stops)
         {
             for(BusDriver driver : m_drivers_in_the_route)
             {
@@ -90,6 +96,9 @@ class Route {
                     m_drivers_on_the_same_stop.add(driver);
                 }
             }
+
+            CollectGossipsFromDriversOfTheActualRepeatedStops();
+            m_drivers_on_the_same_stop.clear();
         }
     }
 
@@ -100,7 +109,7 @@ class Route {
         }
     }
 
-    private void CollectGossips()
+    private void CollectGossipsFromDriversOfTheActualRepeatedStops()
     {
         if(m_drivers_on_the_same_stop.size() < 2)
         {
@@ -111,6 +120,9 @@ class Route {
         {
             m_gossips_collected.addAll(driver.m_gossips);
         }
+
+        ExchangeGossips();
+        m_gossips_collected.clear();
     }
 
     private void GetActualRepeatedStops()
@@ -121,7 +133,7 @@ class Route {
         {
             if(!stops.add(driver.ActualStop()))
             {
-                m_actual_stops.add(driver.ActualStop());
+                m_actual_repeated_stops.add(driver.ActualStop());
             }
         }
     }

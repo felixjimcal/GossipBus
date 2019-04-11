@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a40a96b-9eec-420d-be39-2e5f9b8241a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/BusDriverShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/BusDriverShould.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GossipBus/KnowAllTheStops.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/KnowAllTheStops.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/Route.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/RouteShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/RouteShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusDriverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusDriverShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KnowHowManyStops.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KnowAllTheStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KnowAllTheStops.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Route.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RouteShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouteShould.java" afterDir="false" />
     </list>
@@ -25,23 +21,51 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/gossippbus$RouteShould_CheckGossipExchanged.ic" NAME="RouteShould.CheckGossipExchanged Coverage Results" MODIFIED="1551812425772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BusDriverShould.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47547975">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/KnowAllTheStops.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="591">
+                  <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Route.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="370">
+                  <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,6 +79,8 @@
       <find>stations_list</find>
       <find>drivers_in_the_actual_stop</find>
       <find>(stop</find>
+      <find>m_gossips_collected</find>
+      <find>m_all</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,11 +95,11 @@
         <option value="$PROJECT_DIR$/src/test/RouteShould.java" />
         <option value="$PROJECT_DIR$/src/BusDriver.java" />
         <option value="$PROJECT_DIR$/src/Init.java" />
-        <option value="$PROJECT_DIR$/src/RouteShould.java" />
         <option value="$PROJECT_DIR$/src/KnowHowManyStops.java" />
+        <option value="$PROJECT_DIR$/src/BusDriverShould.java" />
+        <option value="$PROJECT_DIR$/src/RouteShould.java" />
         <option value="$PROJECT_DIR$/src/KnowAllTheStops.java" />
         <option value="$PROJECT_DIR$/src/Route.java" />
-        <option value="$PROJECT_DIR$/src/BusDriverShould.java" />
       </list>
     </option>
   </component>
@@ -95,33 +121,15 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gossippbus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gossippbus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gossippbus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gossippbus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553551492198" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554147778074" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -140,36 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant">
-    <configuration name="BusDriverShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GossipBus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BusDriverShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GossipBus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BusDriverShould" />
-      <option name="METHOD_NAME" value="CheckIfNextStopIsWhatTheStopWeWant" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BusDriverShould.CheckStopsFromBusDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GossipBus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BusDriverShould" />
-      <option name="METHOD_NAME" value="CheckStopsFromBusDriver" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.KnowAllTheStops.FiveStopsToKnowAllTheGossips">
     <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
@@ -180,11 +159,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnowAllTheStops.NeverEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RouteShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KnowAllTheStops" />
-      <option name="METHOD_NAME" value="NeverEnd" />
+      <option name="MAIN_CLASS_NAME" value="RouteShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouteShould.CheckActualRepeatedStops" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GossipBus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RouteShould" />
+      <option name="METHOD_NAME" value="CheckActualRepeatedStops" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouteShould.CheckAllTheGossips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GossipBus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RouteShould" />
+      <option name="METHOD_NAME" value="CheckAllTheGossips" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouteShould.CheckDriversOnTheStop3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GossipBus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RouteShould" />
+      <option name="METHOD_NAME" value="CheckDriversOnTheStop3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" />
-        <item itemvalue="JUnit.BusDriverShould" />
-        <item itemvalue="JUnit.BusDriverShould.CheckStopsFromBusDriver" />
         <item itemvalue="JUnit.KnowAllTheStops.FiveStopsToKnowAllTheGossips" />
-        <item itemvalue="JUnit.KnowAllTheStops.NeverEnd" />
+        <item itemvalue="JUnit.RouteShould" />
+        <item itemvalue="JUnit.RouteShould.CheckDriversOnTheStop3" />
+        <item itemvalue="JUnit.RouteShould.CheckActualRepeatedStops" />
+        <item itemvalue="JUnit.RouteShould.CheckAllTheGossips" />
       </list>
     </recent_temporary>
   </component>
@@ -214,35 +222,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.03.25 at 22h 47m 19s.xml">
+    <history-entry file="RouteShould_CheckActualRepeatedStops - 2019.04.11 at 20h 57m 27s.xml">
+      <configuration name="RouteShould.CheckActualRepeatedStops" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouteShould_CheckDriversOnTheStop3 - 2019.04.11 at 20h 57m 42s.xml">
+      <configuration name="RouteShould.CheckDriversOnTheStop3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 20h 59m 18s.xml">
       <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KnowAllTheStops_NeverEnd - 2019.03.25 at 22h 47m 26s.xml">
-      <configuration name="KnowAllTheStops.NeverEnd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.03.25 at 22h 48m 28s.xml">
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 21h 16m 08s.xml">
       <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusDriverShould_CheckStopsFromBusDriver - 2019.03.25 at 22h 52m 28s.xml">
-      <configuration name="BusDriverShould.CheckStopsFromBusDriver" configurationId="JUnit" />
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 21h 24m 26s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 22h 52m 54s.xml">
-      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    <history-entry file="RouteShould - 2019.04.11 at 21h 36m 00s.xml">
+      <configuration name="RouteShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusDriverShould - 2019.03.25 at 22h 53m 04s.xml">
-      <configuration name="BusDriverShould" configurationId="JUnit" />
+    <history-entry file="RouteShould - 2019.04.11 at 21h 38m 27s.xml">
+      <configuration name="RouteShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 22h 55m 13s.xml">
-      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 22h 19m 12s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 22h 55m 49s.xml">
-      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 22h 21m 02s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 22h 59m 28s.xml">
-      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BusDriverShould_CheckIfNextStopIsWhatTheStopWeWant - 2019.03.25 at 23h 01m 51s.xml">
-      <configuration name="BusDriverShould.CheckIfNextStopIsWhatTheStopWeWant" configurationId="JUnit" />
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 22h 23m 04s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -255,10 +263,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" weight="0.27878466" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" weight="0.27789935" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.15138593" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -267,12 +275,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32792208" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39764202" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32583067" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38906753" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3215434" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32047158" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32690248" />
@@ -320,25 +328,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Route.java</url>
-          <line>29</line>
+          <line>121</line>
           <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BusDriverShould.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="driver.gossips.size()" language="JAVA" />
-        <watch expression="all_gossips.size()" />
-        <watch expression="driver.NextStop()" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -423,28 +418,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Init.java" />
-    <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
+    <entry file="file://$PROJECT_DIR$/src/KnowHowManyStops.java" />
+    <entry file="file://$PROJECT_DIR$/src/BusDriverShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="315">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KnowHowManyStops.java" />
-    <entry file="file://$PROJECT_DIR$/src/Route.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KnowAllTheStops.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -455,15 +436,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BusDriverShould.java">
+    <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="39" />
+        <state relative-caret-position="591">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KnowAllTheStops.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>

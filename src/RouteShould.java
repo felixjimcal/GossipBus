@@ -8,27 +8,37 @@ import static org.hamcrest.core.Is.is;
 
 public class RouteShould {
 
-    BusDriver driverA;
-    BusDriver driverB;
-    BusDriver driverC;
+    BusDriver driverA, driverB, driverC, driverD, driverE, driverF, driverG;
 
     Route route_BCN;
+
 
     @Before
     public void Initialize()
     {
-        driverA = new BusDriver('A', 3, 1, 2, 3);
-        driverB = new BusDriver('B', 3, 2, 3, 1);
-        driverC = new BusDriver('C', 4, 2, 3, 4, 5);
+        driverA = new BusDriver('A', 7,11,2,2,4,8,2,2);
+        driverB = new BusDriver('B', 3,0,11,8);
+        driverC = new BusDriver('C', 5,11,8,10,3,11);
+        driverD = new BusDriver('D', 5,9,2,5,0,3);
+        driverE = new BusDriver('E', 7,4,8,2,8,1,0,5);
+        driverF = new BusDriver('F', 3,6,8,9);
+        driverG = new BusDriver('G', 4,2,11,3,3);
 
-        route_BCN = new Route(driverA, driverB, driverC);
+        route_BCN = new Route(driverA, driverB, driverC, driverD, driverE, driverF, driverG);
+    }
+
+    @Test
+    public void CheckAllTheGossips()
+    {
+        Set<Character> expected_stops = route_BCN.m_all_the_gossips;
+        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList('A','B','C','D','E','F','G'))));
     }
 
     @Test
     public void CheckActualRepeatedStops()
     {
-        Set<Integer> expected_stops = route_BCN.m_actual_stops;
-        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(2, 3))));
+        Set<Integer> expected_stops = route_BCN.m_actual_repeated_stops;
+        Assert.assertThat(expected_stops, is(new HashSet(Arrays.asList(7,5,3))));
     }
 
     @Test
