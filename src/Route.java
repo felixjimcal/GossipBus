@@ -18,7 +18,7 @@ class Route {
 
          for(int i = 0; i < minutes; i++)
          {
-            GetActualRepeatedStops();
+            GetActualRepeatedStations();
 
             GetDriversOnTheSameStationOnActualStop();
 
@@ -97,7 +97,7 @@ class Route {
                 }
             }
 
-            CollectGossipsFromDriversOfTheActualRepeatedStops();
+            CollectGossipsFromDrivers();
             m_drivers_on_the_same_stop.clear();
         }
     }
@@ -109,7 +109,7 @@ class Route {
         }
     }
 
-    private void CollectGossipsFromDriversOfTheActualRepeatedStops()
+    private void CollectGossipsFromDrivers()
     {
         if(m_drivers_on_the_same_stop.size() < 2)
         {
@@ -125,7 +125,7 @@ class Route {
         m_gossips_collected.clear();
     }
 
-    private void GetActualRepeatedStops()
+    private void GetActualRepeatedStations()
     {
         Set<Integer> stops = new HashSet<>();
 

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a40a96b-9eec-420d-be39-2e5f9b8241a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GossipBus/KnowAllTheStops.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GossipBus/KnowAllTheStops.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KnowAllTheStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KnowAllTheStops.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RouteShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RouteShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,18 +20,17 @@
     <SUITE FILE_PATH="coverage/gossippbus$RouteShould_CheckGossipExchanged.ic" NAME="RouteShould.CheckGossipExchanged Coverage Results" MODIFIED="1551812425772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47547975">
+    <splitter split-orientation="horizontal" split-proportion="0.44509596">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/KnowAllTheStops.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+                <state relative-caret-position="229">
+                  <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -41,8 +38,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="591">
-                  <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+                <state relative-caret-position="676">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -53,12 +50,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Route.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -159,6 +156,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KnowAllTheStops.NeverEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GossipBus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KnowAllTheStops" />
+      <option name="METHOD_NAME" value="NeverEnd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RouteShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
@@ -178,16 +185,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RouteShould.CheckAllTheGossips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GossipBus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RouteShould" />
-      <option name="METHOD_NAME" value="CheckAllTheGossips" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RouteShould.CheckDriversOnTheStop3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GossipBus" />
       <option name="PACKAGE_NAME" value="" />
@@ -201,10 +198,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.KnowAllTheStops.FiveStopsToKnowAllTheGossips" />
+        <item itemvalue="JUnit.KnowAllTheStops.NeverEnd" />
         <item itemvalue="JUnit.RouteShould" />
         <item itemvalue="JUnit.RouteShould.CheckDriversOnTheStop3" />
         <item itemvalue="JUnit.RouteShould.CheckActualRepeatedStops" />
-        <item itemvalue="JUnit.RouteShould.CheckAllTheGossips" />
       </list>
     </recent_temporary>
   </component>
@@ -222,24 +219,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RouteShould_CheckActualRepeatedStops - 2019.04.11 at 20h 57m 27s.xml">
-      <configuration name="RouteShould.CheckActualRepeatedStops" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould_CheckDriversOnTheStop3 - 2019.04.11 at 20h 57m 42s.xml">
-      <configuration name="RouteShould.CheckDriversOnTheStop3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 20h 59m 18s.xml">
-      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 21h 16m 08s.xml">
-      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 21h 24m 26s.xml">
-      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouteShould - 2019.04.11 at 21h 36m 00s.xml">
-      <configuration name="RouteShould" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RouteShould - 2019.04.11 at 21h 38m 27s.xml">
       <configuration name="RouteShould" configurationId="JUnit" />
     </history-entry>
@@ -250,6 +229,24 @@
       <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
     <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 22h 23m 04s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 22h 46m 40s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.11 at 22h 47m 15s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_NeverEnd - 2019.04.13 at 10h 12m 22s.xml">
+      <configuration name="KnowAllTheStops.NeverEnd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.13 at 10h 12m 25s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.13 at 10h 12m 36s.xml">
+      <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KnowAllTheStops_FiveStopsToKnowAllTheGossips - 2019.04.13 at 10h 15m 24s.xml">
       <configuration name="KnowAllTheStops.FiveStopsToKnowAllTheGossips" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -264,7 +261,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" weight="0.27789935" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.15138593" />
@@ -275,12 +271,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32583067" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38906753" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32047158" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32047158" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32690248" />
@@ -438,25 +434,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RouteShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="676">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Route.java">
+    <entry file="file://$PROJECT_DIR$/src/KnowAllTheStops.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+        <state relative-caret-position="229">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KnowAllTheStops.java">
+    <entry file="file://$PROJECT_DIR$/src/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="374">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>

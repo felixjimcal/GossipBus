@@ -17,7 +17,21 @@ public class KnowAllTheStops {
     }
 
     @Test
-    public void FiveStopsToKnowAllTheGossips() {
+    public void FiveStopsToKnowAllTheGossips()
+    {
+        driverA = new BusDriver('A', 3,1,2,3);
+        driverB = new BusDriver('B', 3,2,3,1);
+        driverC = new BusDriver('C', 4,2,3,4,5);
+
+        route_BCN = new Route(driverA, driverB, driverC);
+
+        int total_stops_need = route_BCN.total_stops_to_share_all_the_gossips;
+
+        Assert.assertThat(total_stops_need, is(5));
+    }
+
+    @Test
+    public void NineStopsToKnowAllTheGossips() {
 
         driverA = new BusDriver('A', 7,11,2,2,4,8,2,2);
         driverB = new BusDriver('B', 3,0,11,8);
@@ -31,7 +45,7 @@ public class KnowAllTheStops {
 
         int total_stops_need = route_BCN.total_stops_to_share_all_the_gossips;
 
-        Assert.assertThat(total_stops_need, is(8));
+        Assert.assertThat(total_stops_need, is(9));
     }
 
     @Test
